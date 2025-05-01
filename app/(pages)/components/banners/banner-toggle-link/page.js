@@ -23,65 +23,65 @@ const BannerToggleLinkComponent = () => {
         setShowCode(!showCode);
     };
 
-    const copyCode = () => {
-        navigator.clipboard.writeText(`// "use client" (If using NextJS)
+    // const copyCode = () => {
+    //     navigator.clipboard.writeText(`// "use client" (If using NextJS)
 
-        import { useState } from 'react';
-        import Link from 'next/link';
+    //     import { useState } from 'react';
+    //     import Link from 'next/link';
         
-        const Banner = () => {
-            const [isBannerVisible, setIsBannerVisible] = useState(true);
+    //     const Banner = () => {
+    //         const [isBannerVisible, setIsBannerVisible] = useState(true);
         
-            const toggleBanner = () => {
-                setIsBannerVisible(!isBannerVisible);
-            };
+    //         const toggleBanner = () => {
+    //             setIsBannerVisible(!isBannerVisible);
+    //         };
         
-            return (
-                <>
-                    {isBannerVisible && (
-                        <div className="bg-indigo-600">
-                            <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-start justify-between text-white md:px-8">
-                                <div className="flex gap-x-4">
-                                    <div className="max-w-screen-xl mx-auto px-4 py-3
-                                text-white sm:text-center md:px-8">
-                                        <p className="font-medium">
-                                            We just launched MotionUI!{" "}
-                                            <Link href="/" className="font-semibold underline
-                                    duration-150 hover:text-indigo-100
-                                    inline-flex items-center gap-x-1"
-                                            >
-                                                Check out now
-                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 20 20" fill="currentColor"
-                                                    className="w-5 h-5">
-                                                    <path
-                                                        fillRule="evenodd" d="M5 10a.75.75
-                                            0 01.75-.75h6.638L10.23 7.29a.75.75 0
-                                            111.04-1.08l3.5 3.25a.75.75 0 010
-                                            1.08l-3.5 3.25a.75.75 0
-                                            11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015
-                                            10z" clipRule="evenodd"
-                                                    />
-                                                </svg>
-                                            </Link>
-                                        </p>
-                                    </div>
-                                </div>
-                                <button className="p-2 rounded-lg duration-150 hover:bg-indigo-500 ring-offset-2 focus:ring" onClick={toggleBanner}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 h-6">
-                                        <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    )}
-                </>
-            );
-        };
+    //         return (
+    //             <>
+    //                 {isBannerVisible && (
+    //                     <div className="bg-indigo-600">
+    //                         <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-start justify-between text-white md:px-8">
+    //                             <div className="flex gap-x-4">
+    //                                 <div className="max-w-screen-xl mx-auto px-4 py-3
+    //                             text-white sm:text-center md:px-8">
+    //                                     <p className="font-medium">
+    //                                         We just launched MotionUI!{" "}
+    //                                         <Link href="/" className="font-semibold underline
+    //                                 duration-150 hover:text-indigo-100
+    //                                 inline-flex items-center gap-x-1"
+    //                                         >
+    //                                             Check out now
+    //                                             <svg xmlns="http://www.w3.org/2000/svg"
+    //                                                 viewBox="0 0 20 20" fill="currentColor"
+    //                                                 className="w-5 h-5">
+    //                                                 <path
+    //                                                     fillRule="evenodd" d="M5 10a.75.75
+    //                                         0 01.75-.75h6.638L10.23 7.29a.75.75 0
+    //                                         111.04-1.08l3.5 3.25a.75.75 0 010
+    //                                         1.08l-3.5 3.25a.75.75 0
+    //                                         11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015
+    //                                         10z" clipRule="evenodd"
+    //                                                 />
+    //                                             </svg>
+    //                                         </Link>
+    //                                     </p>
+    //                                 </div>
+    //                             </div>
+    //                             <button className="p-2 rounded-lg duration-150 hover:bg-indigo-500 ring-offset-2 focus:ring" onClick={toggleBanner}>
+    //                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 h-6">
+    //                                     <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+    //                                 </svg>
+    //                             </button>
+    //                         </div>
+    //                     </div>
+    //                 )}
+    //             </>
+    //         );
+    //     };
         
-        export default Banner;
-        `);
-    };
+    //     export default Banner;
+    //     `);
+    // };
 
     return (
         <>
@@ -113,7 +113,7 @@ const BannerToggleLinkComponent = () => {
                                 {showCode ? "Hide Code" : "Show Code"}
                             </button>
                             {showCode && (
-                                <button className="px- py-2 text-white rounded-md transition duration-300 bg-black hover:bg-indigo-600 focus:outline-none w-full" onClick={copyCode}>
+                                <button className="px- py-2 text-white rounded-md transition duration-300 bg-black hover:bg-indigo-600 focus:outline-none w-full">
                                     <HiClipboardCopy className="w-6 h-6 inline-block mr-2" /> Copy Code
                                 </button>
                             )}
