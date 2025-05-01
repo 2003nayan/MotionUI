@@ -23,7 +23,7 @@ const ModernNavbar = () => {
     const fetchRepoStars = async () => {
       try {
         const response = await fetch(
-          "https://api.github.com/repos/gaurav-sarage/NextBlend"
+          "https://api.github.com/repos/2003nayan/MotionUI"
         );
         const data = await response.json();
         setStarCount(data.stargazers_count);
@@ -136,7 +136,7 @@ const ModernNavbar = () => {
             </motion.div>
             <motion.div variants={itemVariants}>
               <Link
-                href="https://github.com/gaurav-sarage/NextBlend"
+                href="https://github.com/2003nayan/MotionUI"
                 target="_blank"
               >
                 <motion.button
