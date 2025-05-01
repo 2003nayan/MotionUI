@@ -5,7 +5,6 @@ import React from "react";
 import Navbar from "@/app/components/Navbar";
 import ModernFooter from "@/app/components/ModernFooter";
 import Sidebar from "@/app/components/Sidebar";
-import ModernFooter from "@/app/components/ModernFooter";
 
 const ListBannerComponents = () => {
     return (

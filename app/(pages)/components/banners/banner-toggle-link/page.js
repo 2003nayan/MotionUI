@@ -14,7 +14,6 @@ import {
     HiArrowLeft,
     HiArrowRight
 } from "react-icons/hi";
-import ModernFooter from "@/app/components/ModernFooter";
 
 const BannerToggleLinkComponent = () => {
     const [showCode, setShowCode] = useState(false);

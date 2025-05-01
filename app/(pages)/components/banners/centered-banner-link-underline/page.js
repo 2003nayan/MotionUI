@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 
-import ModernFooter from "@/app/components/ModernFooter";
 import Navbar from "@/app/components/Navbar";
 import Sidebar from "@/app/components/Sidebar";
 

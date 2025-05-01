@@ -5,7 +5,6 @@ import React from "react";
 import Navbar from "@/app/components/Navbar";
 import Sidebar from "@/app/components/Sidebar";
 import ModernFooter from "@/app/components/ModernFooter";
-import ModernFooter from "@/app/components/ModernFooter";
 
 const ListContactSectionComponents = () => {
     return (

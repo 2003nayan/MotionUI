@@ -5,7 +5,6 @@ import Link from "next/link";
 
 import Navbar from "@/app/components/Navbar";
 import Sidebar from "@/app/components/Sidebar";
-import ModernFooter from "@/app/components/ModernFooter";
 
 import {
     HiClipboardCopy,
